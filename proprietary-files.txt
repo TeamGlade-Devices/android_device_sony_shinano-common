@@ -44,6 +44,8 @@ vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so
 vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so
+vendor/lib/libmmcamera_tintless_algo.so
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
@@ -55,6 +57,7 @@ vendor/lib/libqomx_jpegenc.so
 # Cacao
 lib/camera/libexcal_halctrl_plugin.so
 lib/camera/libexcal_idtctrl_plugin.so
+lib/libals.so
 lib/libcacao_chokoball.so
 lib/libcacao_client.so
 lib/libcacao_common.so
@@ -74,6 +77,8 @@ lib/libface.so
 lib/libface_wrapper.so
 lib/libsomc_chokoballpal.so
 lib/libsony_chokoball.so
+lib/libsony_chokoballrsc.so
+lib/libsony_face.so
 
 # Chromatix
 vendor/lib/libchromatix_imx134_common.so
