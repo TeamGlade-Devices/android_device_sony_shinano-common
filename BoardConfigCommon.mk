@@ -23,7 +23,7 @@ BOARD_VENDOR_PLATFORM := shinano
 # Kernel information
 BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE  := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
+BOARD_KERNEL_CMDLINE  := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 vmalloc=300M dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y display_status=on
 BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_DTB_EXTRA_FLAGS := --force-v2
@@ -36,6 +36,10 @@ STRICT_ALIASING := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# Audio
+AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
+AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -98,6 +102,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/shinano-common/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+<<<<<<< HEAD
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
@@ -135,3 +140,5 @@ MR_DPI_FONT := 340
 MR_FSTAB := device/sony/shinano-common/rootdir/twrp.fstab
 MR_USE_MROM_FSTAB := true
 MR_KEXEC_MEM_MIN := 0x03000000
+=======
+>>>>>>> 899b01eea912bae4d31ae9d0181018de41990f61

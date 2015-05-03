@@ -1,5 +1,4 @@
 # Audio
-lib/hw/audio.primary.msm8974.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
@@ -179,10 +178,6 @@ etc/firmware/venus.b03
 etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
-
-# CPU
-bin/mpdecision
-vendor/lib/libqc-opt.so
 
 # DRM
 bin/qseecomd
